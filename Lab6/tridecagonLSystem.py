@@ -30,7 +30,7 @@ def processString(oldStr):
 def applyRules(ch):
     newstr = ""
     if ch == 'F':
-        newstr = 'F++H-FP'   # Rule 1
+        newstr = 'F++T-FP'   # Rule 1
     else:
         newstr = ch    # no rules apply so keep the character
 
@@ -46,7 +46,7 @@ def drawLsystem(aTurtle, instructions, angle, distance):
             aTurtle.right(angle)
         elif cmd == '-':
             aTurtle.left(angle)
-        elif cmd == 'H':
+        elif cmd == 'T':
             tridecagonTurtle(distance, aTurtle.xcor(), aTurtle.ycor() ,  aTurtle)
         elif cmd == 'P':
             aTurtle.penup()
