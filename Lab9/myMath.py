@@ -23,6 +23,8 @@ def divide(a, b):
     Divides the first number by the second.
     Raises an exception if division by zero is attempted.
     """
+    if b == 0:
+        return a
     return a / b 
 
 def power(base, exponent):
